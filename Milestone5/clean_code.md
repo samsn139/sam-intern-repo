@@ -54,3 +54,15 @@ Breaking down functions into smaller, focused units allows for easier understand
 
 ### How did refactoring improve the structure of the code?
 By refactoring the function, the logic became more modular and easier to follow. Each function now has a single responsibility, which makes the code more readable and reusable. The refactored code also makes unit testing more straightforward, as each function performs a discrete task.
+
+
+## Naming Variables & Functions
+
+### What makes a good variable or function name?
+A good variable or function name is descriptive and meaningful. It should clearly convey its purpose or action in the code. Names should be concise but unambiguous. For functions, it's best to use verbs to indicate actions (e.g., `calculate`, `fetch`, `update`).
+
+### What issues can arise from poorly named variables?
+Poorly named variables can lead to confusion, making it harder for developers to understand the code. This can result in bugs, longer debugging times, and difficulty maintaining the code. Unclear names increase the cognitive load when trying to understand the code, making it less readable.
+
+### How did refactoring improve code readability?
+Refactoring the code with clear, descriptive names makes the purpose of each variable and function much easier to understand. It eliminates ambiguity and improves the overall readability of the code. Now, it's immediately clear what the function is doing and what each variable represents.
