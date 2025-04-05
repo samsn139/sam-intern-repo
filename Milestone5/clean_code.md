@@ -66,3 +66,12 @@ Poorly named variables can lead to confusion, making it harder for developers to
 
 ### How did refactoring improve code readability?
 Refactoring the code with clear, descriptive names makes the purpose of each variable and function much easier to understand. It eliminates ambiguity and improves the overall readability of the code. Now, it's immediately clear what the function is doing and what each variable represents.
+
+
+## Code Formatting & Style Guides
+
+### Why is code formatting important?
+Code formatting ensures that all developers follow the same conventions, making code easier to read, understand, and maintain. It also prevents errors caused by inconsistent formatting and reduces cognitive load when navigating a project. Automated tools like linters and formatters help enforce these standards across the codebase.
+
+### Did formatting the code make it easier to read?
+Yes.
