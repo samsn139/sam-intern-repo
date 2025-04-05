@@ -75,3 +75,24 @@ Code formatting ensures that all developers follow the same conventions, making 
 
 ### Did formatting the code make it easier to read?
 Yes.
+
+
+## Clean Code Principles
+
+### Simplicity
+Keeping code simple makes it more understandable and maintainable. By breaking complex functions into smaller, focused functions, we reduce the risk of introducing bugs and make the code easier to work with in the future.
+
+### Readability
+Readable code is easier to debug and maintain. Naming functions clearly and avoiding deeply nested logic increases code clarity, making it easier for other developers to understand.
+
+### Maintainability
+The refactored code is more maintainable because the logic is encapsulated in smaller functions. Changes to the logic can be made without affecting the entire function, making future updates easier.
+
+### Consistency
+Consistent code follows the same patterns throughout the codebase. In this case, breaking down the `process_data` function into smaller, reusable functions ensures consistency in the codebase.
+
+### Efficiency
+The refactored code uses list comprehension, which is not only more concise but also more efficient in Python. However, performance considerations should be based on profiling and actual performance needs.
+
+### Reflections on the Original Code
+The original code had several nested conditionals that made it difficult to follow and maintain. The refactored version is cleaner, with logic broken into smaller, focused functions. This makes the code easier to understand, modify, and maintain over time.
