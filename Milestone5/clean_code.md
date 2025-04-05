@@ -45,3 +45,12 @@ The duplicated code led to redundancy, making the codebase harder to maintain an
 
 ### How did refactoring improve maintainability?
 By refactoring the code, we eliminated duplication by centralizing the logic into a single function. This improves maintainability because any future changes (such as altering the discount logic) only need to be applied in one place. It also reduces the chance of introducing errors or bugs due to inconsistent code.
+
+
+## Writing Small, Focused Functions
+
+### Why is breaking down functions beneficial?
+Breaking down functions into smaller, focused units allows for easier understanding and maintenance. It enhances readability, making it easier for other developers to follow the logic. Additionally, small functions are easier to test and debug.
+
+### How did refactoring improve the structure of the code?
+By refactoring the function, the logic became more modular and easier to follow. Each function now has a single responsibility, which makes the code more readable and reusable. The refactored code also makes unit testing more straightforward, as each function performs a discrete task.
