@@ -36,3 +36,12 @@ The original code was complex because it mixed multiple responsibilities into a 
 
 ### How did refactoring improve it?
 By refactoring the code, we extracted each concern into its own function, improving readability and maintainability. Each function now has a single responsibility and is easier to understand. The main function is now simpler, focusing on orchestrating the calculation by calling smaller, more focused functions.
+
+
+## Avoiding Code Duplication
+
+### What were the issues with duplicated code?
+The duplicated code led to redundancy, making the codebase harder to maintain and more error-prone. Any change in the logic (e.g., changing how discounts are applied) would have to be made in multiple places, increasing the chances of inconsistencies.
+
+### How did refactoring improve maintainability?
+By refactoring the code, we eliminated duplication by centralizing the logic into a single function. This improves maintainability because any future changes (such as altering the discount logic) only need to be applied in one place. It also reduces the chance of introducing errors or bugs due to inconsistent code.
