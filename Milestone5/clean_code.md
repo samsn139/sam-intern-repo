@@ -27,3 +27,12 @@ You should add comments when the logic is complex, when the code's intention is 
 
 ### When should you avoid comments and instead improve the code?
 You should avoid adding comments when the code is already self-explanatory. Instead of commenting obvious code, refactor the code to make it more readable and understandable. Using meaningful variable names, breaking down large functions, and simplifying logic can often eliminate the need for comments.
+
+
+## Refactoring Code for Simplicity
+
+### What made the original code complex?
+The original code was complex because it mixed multiple responsibilities into a single function: calculating discounts, shipping, and the total order value. It also had deeply nested logic, and the calculation was spread throughout the function, making it difficult to read and maintain.
+
+### How did refactoring improve it?
+By refactoring the code, we extracted each concern into its own function, improving readability and maintainability. Each function now has a single responsibility and is easier to understand. The main function is now simpler, focusing on orchestrating the calculation by calling smaller, more focused functions.
