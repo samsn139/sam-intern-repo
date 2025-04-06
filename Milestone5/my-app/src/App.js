@@ -86,14 +86,12 @@ import React from 'react';
 //   );
 // }
 
-import TestPost from "./TestPost"; 
+import Counter from './components/Counter';
 
 function App() {
   return (
     <div className="App">
-      <h1>Axios POST Request Test</h1>
-      {/* Render the TestPost component */}
-      <TestPost />
+      <Counter />
     </div>
   );
 }
