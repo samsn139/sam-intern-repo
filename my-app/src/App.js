@@ -56,13 +56,24 @@ import React from 'react';
 //   );
 // }
 
-import EffectDemo from './EffectDemo';
+// import EffectDemo from './EffectDemo';
+
+// function App() {
+//   return (
+//     <div className="min-h-screen p-6 bg-gray-100">
+//       <EffectDemo />
+//     </div>
+//   );
+// }
+
+import ExpensiveList from './ExpensiveList';
 
 function App() {
   return (
     <div className="min-h-screen p-6 bg-gray-100">
-      <EffectDemo />
+      <ExpensiveList />
     </div>
   );
 }
+
 export default App;
