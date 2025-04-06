@@ -86,14 +86,26 @@ import React from 'react';
 //   );
 // }
 
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
 
-function App() {
+// function App() {
+//   return (
+//     <div className="App">
+//       <Counter />
+//     </div>
+//   );
+// }
+
+import CounterBox from './components/CounterBox';
+import MotivationMessage from './components/MotivationMessage';
+
+const App = () => {
   return (
-    <div className="App">
-      <Counter />
+    <div className="p-8">
+      <CounterBox />
+      <MotivationMessage />
     </div>
   );
-}
+};
 
 export default App;

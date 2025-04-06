@@ -24,3 +24,6 @@ export const { increment, decrement, reset } = counterSlice.actions;
 
 // Export the reducer to be included in the store
 export default counterSlice.reducer;
+
+// Selector to get the current count value
+export const selectCount = (state) => state.counter.value;
