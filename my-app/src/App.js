@@ -40,19 +40,29 @@ import React from 'react';
 //   return <ListInput />;
 // }
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Profile from './Profile';
+
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Home from './Home';
+// import Profile from './Profile';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/profile" element={<Profile />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+import EffectDemo from './EffectDemo';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
-      </Routes>
-    </Router>
+    <div className="min-h-screen p-6 bg-gray-100">
+      <EffectDemo />
+    </div>
   );
 }
-
 export default App;
