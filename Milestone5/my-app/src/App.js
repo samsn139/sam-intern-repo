@@ -76,12 +76,24 @@ import React from 'react';
 //   );
 // }
 
-import ParentComponent from './ParentComponent';
+// import ParentComponent from './ParentComponent';
+
+// function App() {
+//   return (
+//     <div className="min-h-screen bg-gray-100 p-8">
+//       <ParentComponent />
+//     </div>
+//   );
+// }
+
+import TestPost from "./TestPost"; 
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <ParentComponent />
+    <div className="App">
+      <h1>Axios POST Request Test</h1>
+      {/* Render the TestPost component */}
+      <TestPost />
     </div>
   );
 }
