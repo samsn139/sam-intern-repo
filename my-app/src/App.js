@@ -24,14 +24,20 @@ import React from 'react';
 //   );
 // }
 
-import Counter from './Counter';
+// import Counter from './Counter';
+
+// function App() {
+//   return (
+//     <div>
+//       <Counter />
+//     </div>
+//   );
+// }
+
+import ListInput from './ListInput';
 
 function App() {
-  return (
-    <div>
-      <Counter />
-    </div>
-  );
+  return <ListInput />;
 }
 
 export default App;
