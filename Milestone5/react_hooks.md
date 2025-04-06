@@ -36,3 +36,25 @@ useMemo caches the result of a computation and only re-runs it when its dependen
 ### What happens if you remove useMemo from your implementation?
 
 The expensive calculation will run **every time** the component re-renders, even if the data hasn’t changed. This can significantly degrade performance, especially with large datasets or CPU-heavy operations.
+
+
+### What problem does useCallback solve?
+
+`useCallback` prevents a function from being re-created on every render unless its dependencies change. This is helpful when passing functions to memoized child components, avoiding unnecessary re-renders.
+
+---
+
+### How does useCallback work differently from useMemo?
+
+- `useMemo` returns a **memoized value**.
+- `useCallback` returns a **memoized function**.
+
+They both take a function and a dependency array, but their purposes differ: one is for values, the other for functions.
+
+---
+
+### When would useCallback not be useful?
+
+- If the function is not passed to child components.
+- If re-renders are inexpensive.
+- Overuse can lead to premature optimization and code complexity without real performance gain.

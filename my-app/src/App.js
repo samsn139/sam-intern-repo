@@ -66,12 +66,22 @@ import React from 'react';
 //   );
 // }
 
-import ExpensiveList from './ExpensiveList';
+// import ExpensiveList from './ExpensiveList';
+
+// function App() {
+//   return (
+//     <div className="min-h-screen p-6 bg-gray-100">
+//       <ExpensiveList />
+//     </div>
+//   );
+// }
+
+import ParentComponent from './ParentComponent';
 
 function App() {
   return (
-    <div className="min-h-screen p-6 bg-gray-100">
-      <ExpensiveList />
+    <div className="min-h-screen bg-gray-100 p-8">
+      <ParentComponent />
     </div>
   );
 }
