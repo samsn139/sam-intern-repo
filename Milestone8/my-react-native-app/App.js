@@ -19,14 +19,30 @@
 //   },
 // });
 
+// import React from 'react';
+// import { SafeAreaView } from 'react-native';
+// import Greeting from './components/Greeting';
+
+// export default function App() {
+//   return (
+//     <SafeAreaView>
+//       <Greeting />
+//     </SafeAreaView>
+//   );
+// }
+
 import React from 'react';
-import { SafeAreaView } from 'react-native';
-import Greeting from './components/Greeting';
+import { ScrollView, SafeAreaView } from 'react-native';
+import InlineStyledBox from './components/InlineStyledBox';
+import SheetStyledBox from './components/SheetStyledBox';
 
 export default function App() {
   return (
     <SafeAreaView>
-      <Greeting />
+      <ScrollView>
+        <InlineStyledBox />
+        <SheetStyledBox />
+      </ScrollView>
     </SafeAreaView>
   );
 }
