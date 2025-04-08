@@ -31,18 +31,35 @@
 //   );
 // }
 
-import React from 'react';
-import { ScrollView, SafeAreaView } from 'react-native';
-import InlineStyledBox from './components/InlineStyledBox';
-import SheetStyledBox from './components/SheetStyledBox';
+// import { ScrollView, SafeAreaView } from 'react-native';
+// import InlineStyledBox from './components/InlineStyledBox';
+// import SheetStyledBox from './components/SheetStyledBox';
+
+// export default function App() {
+//   return (
+//     <SafeAreaView>
+//       <ScrollView>
+//         <InlineStyledBox />
+//         <SheetStyledBox />
+//       </ScrollView>
+//     </SafeAreaView>
+//   );
+// }
+
+
+import { GestureHandlerRootView } from 'react-native-gesture-handler'; // Corrected import
+import { SafeAreaView } from 'react-native';  // SafeAreaView remains from 'react-native'
+import GestureComponent from './components/GestureComponent';
+import AnimationComponent from './components/AnimationComponent';
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <InlineStyledBox />
-        <SheetStyledBox />
-      </ScrollView>
-    </SafeAreaView>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SafeAreaView style={{ flex: 1 }}>
+        <GestureComponent />
+        <AnimationComponent />
+      </SafeAreaView>
+    </GestureHandlerRootView>
   );
 }
+
