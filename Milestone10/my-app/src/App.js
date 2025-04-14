@@ -1,0 +1,133 @@
+import './App.css';
+import './index.css';
+import React from 'react';
+
+// function App() {
+//   return (
+//     <div className="flex justify-center items-center h-screen bg-blue-500">
+//       <button 
+//         className="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700">
+//         I'm a button!
+//       </button>
+//     </div>
+//   );
+// }
+
+
+// import HelloWorld from './HelloWorld'; 
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <HelloWorld name="Focus Bear" /> {/* Passing 'Focus Bear' as a prop */}
+//     </div>
+//   );
+// }
+
+// import Counter from './Counter';
+
+// function App() {
+//   return (
+//     <div>
+//       <Counter />
+//     </div>
+//   );
+// }
+
+// import ListInput from './ListInput';
+
+// function App() {
+//   return <ListInput />;
+// }
+
+
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Home from './Home';
+// import Profile from './Profile';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/profile" element={<Profile />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// import EffectDemo from './EffectDemo';
+
+// function App() {
+//   return (
+//     <div className="min-h-screen p-6 bg-gray-100">
+//       <EffectDemo />
+//     </div>
+//   );
+// }
+
+// import ExpensiveList from './ExpensiveList';
+
+// function App() {
+//   return (
+//     <div className="min-h-screen p-6 bg-gray-100">
+//       <ExpensiveList />
+//     </div>
+//   );
+// }
+
+// import ParentComponent from './ParentComponent';
+
+// function App() {
+//   return (
+//     <div className="min-h-screen bg-gray-100 p-8">
+//       <ParentComponent />
+//     </div>
+//   );
+// }
+
+// import Counter from './components/Counter';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Counter />
+//     </div>
+//   );
+// }
+
+// import CounterBox from './components/CounterBox';
+// import MotivationMessage from './components/MotivationMessage';
+
+// const App = () => {
+//   return (
+//     <div className="p-8">
+//       <CounterBox />
+//       <MotivationMessage />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// src/App.js
+import React from 'react';
+import { SafeAreaView, Text, Button } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+import { increment, decrement, getCounterValue } from './features/counter/counterSlice';
+
+const App = () => {
+  const dispatch = useDispatch();
+  const counterValue = useSelector(getCounterValue);
+
+  return (
+    <SafeAreaView>
+      <Text>Counter Value: {counterValue}</Text>
+      <Button title="Increment" onPress={() => dispatch(increment())} />
+      <Button title="Decrement" onPress={() => dispatch(decrement())} />
+    </SafeAreaView>
+  );
+};
+
+export default App;
+
